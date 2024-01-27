@@ -35,8 +35,7 @@ def get_personal_data():
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#demo" data-toggle="collapse" style="margin-left: -6px; margin-top: -2px;"><i class="fa-solid fa-trophy"></i>Awards</button>
                     <div id="demo" class="collapse">
                     <span style="font-weight: bold;">Awards</span><br>
-                    <span style="font-style: italic;">-- Undergraduate period:</span><br>
-                    Second Prize, China-US Young Maker Competition (CUYMC) <br>
+                    National Second Prize, China-US Young Maker Competition (CUYMC) <br>
                     National Third Prize, 17th “Challenge Up” <br>
                     Provincial First Prize, 16th “Challenge Up” <br>
                     Successful Participant, 2021 Mathematical Contest in Modeling <br>
