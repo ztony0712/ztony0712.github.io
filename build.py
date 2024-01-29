@@ -39,10 +39,10 @@ def get_personal_data():
                     National Third Prize, 17th “Challenge Up” <br>
                     Provincial First Prize, 16th “Challenge Up” <br>
                     Successful Participant, 2021 Mathematical Contest in Modeling <br>
-                    Third Prize, 12th Extracurricular Scientific and Technological Innovation Experimental Competition <br>
-                    First Prize, 13th Extracurricular Scientific and Technological Innovation Experimental Competition <br>
-                    Comprehensive Second-Prize Scholarship, Southwest Jiaotong University, 2020-2021 <br>
-                    Excellent Student Cadre, Southwest Jiaotong University, 2020-2021 <br>
+                    First Prize, SWJTU, 13th Extracurricular Scientific and Technological Innovation Experimental Competition <br>
+                    Third Prize, SWJTU, 12th Extracurricular Scientific and Technological Innovation Experimental Competition <br>
+                    Comprehensive Second-Prize Scholarship, SWJTU, 2020-2021 <br>
+                    Excellent Student Cadre, SWJTU, 2020-2021 <br>
                 </div>
                 </p>
     """
