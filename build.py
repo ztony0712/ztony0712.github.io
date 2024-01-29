@@ -20,13 +20,14 @@ def get_personal_data():
                 <p>
                     <span style="font-weight: bold;">Bio:</span> 
                     I graduated as a BSc from <a href="https://en.swjtu.edu.cn/" target="_blank">Southwest Jiaotong University (SWJTU)</a> in China.
-                    During that time, I focused on the applications of Deep Learning for EEG analysis, surpervised by <a href="https://scholar.google.com/citations?user=eLsZxC4AAAAJ&hl=zh-CN" target="_blank">Prof. Tianrui Li</a>.
-                    Also, I am exciting for winning the second prize of <a href="https://chinaus-maker.cscse.edu.cn/chinaus-maker/hjzp/503460/index.html" target="_blank">China-US Young Maker Competition (CUYMC) in 2021</a>.
+                    During that time, I focused on the researches of Deep Learning for EEG analysis, surpervised by <a href="https://scholar.google.com/citations?user=eLsZxC4AAAAJ&hl=zh-CN" target="_blank">Prof. Tianrui Li</a> 
+                    and <a href="https://faculty.swjtu.edu.cn/gujin/zh_CN/index.htm" target="_blank">Lecturer Jin Gu</a>.
+                    Also, I am exciting for winning the National Second Prize of <a href="https://chinaus-maker.cscse.edu.cn/chinaus-maker/hjzp/503460/index.html" target="_blank">China-US Young Maker Competition (CUYMC) in 2021</a>.
                 </p>
                 <p>Please do not hesitate to contact me for any inquiries!</p>
                 <p>
                     <a href="assets/pdf/CV_Yimin_ZHAO.pdf" target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
-                    <a href="mailto:ztony0712@outlook.com" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
+                    <a href="mailto:ztony0712@outlook.com" target="_blank" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
                     <a href="https://twitter.com/ztony0712" target="_blank" style="margin-right: 15px"><i class="fab fa-twitter fa-lg"></i> X</a>
                     <a href="https://scholar.google.com/citations?user=NNnZnvAAAAAJ&hl=en" target="_blank" style="margin-right: 15px"><i class="fa-solid fa-book"></i> Scholar</a>
                     <a href="https://github.com/ztony0712" target="_blank" style="margin-right: 15px"><i class="fab fa-github fa-lg"></i> Github</a>
@@ -50,8 +51,10 @@ def get_personal_data():
             <div class="col-sm-12" style="">
                 <h4>Homepage Template</h4>
                 <p>
-                    This web page is developed based on <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a>\'s template. 
-                    You can visit his <a href="https://github.com/m-niemeyer/m-niemeyer.github.io">Github Repository</a> to create your own personal website.
+                    This web page is developed based on <a href="https://m-niemeyer.github.io/" target="_blank">Michael Niemeyer</a>\'s template. 
+                    You can visit his <a href="https://github.com/m-niemeyer/m-niemeyer.github.io" target="_blank">Github Repository</a> to create your own personal website.
+                    Moreover, I developed a goal-setting website named <a href="https://ztony0712.pythonanywhere.com/" target="_blank">MyOKR</a>.
+                    Welcome to try it!
                 </p>
             </div>
     """
@@ -60,7 +63,7 @@ def get_personal_data():
 def get_author_dict():
     return {
         'Haohong Wang': 'https://www.researchgate.net/profile/Haohong-Wang',
-        'Damien Rompapas': 'https://scholar.google.co.jp/citations?user=BD7CuEcAAAAJ&hl=en',
+        'Rompapas Damien': 'https://scholar.google.co.jp/citations?user=BD7CuEcAAAAJ&hl=en',
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Yimin Zhao', add_links=True):
@@ -68,7 +71,7 @@ def generate_person_html(persons, connection=", ", make_bold=True, make_bold_nam
     s = ""
     for p in persons:
         string_part_i = ""
-        for name_part_i in p.get_part('first') + p.get_part('last'): 
+        for name_part_i in p.get_part('last') + p.get_part('first'): 
             if string_part_i != "":
                 string_part_i += " "
             string_part_i += name_part_i
@@ -114,14 +117,20 @@ def get_paper_entry(entry_key, entry):
     s += """ </div> </div> </div>"""
     return s
 
-def get_talk_entry(entry_key, entry):
+def get_project_entry(entry_key, entry):
     s = """<div style="margin-bottom: 3em;"> <div class="row"><div class="col-sm-3">"""
     s += f"""<img src="{entry.fields['img']}" class="img-fluid img-thumbnail" alt="Project image">"""
     s += """</div><div class="col-sm-9">"""
-    s += f"""{entry.fields['title']}<br>"""
+
+    if 'award' in entry.fields.keys():
+        s += f"""<a href="{entry.fields['html']}" target="_blank">{entry.fields['title']}</a> <span style="color: red;">({entry.fields['award']})</span><br>"""
+    else:
+        s += f"""<a href="{entry.fields['html']}" target="_blank">{entry.fields['title']}</a> <br>"""
+
+    s += f"""{generate_person_html(entry.persons['author'])} <br>"""
     s += f"""<span style="font-style: italic;">{entry.fields['booktitle']}</span>, {entry.fields['year']} <br>"""
 
-    artefacts = {'slides': 'Slides', 'video': 'Recording'}
+    artefacts = {'html': 'Project Page', 'pdf': 'Paper'}
     i = 0
     for (k, v) in artefacts.items():
         if k in entry.fields.keys():
@@ -131,6 +140,12 @@ def get_talk_entry(entry_key, entry):
             i += 1
         else:
             print(f'[{entry_key}] Warning: Field {k} missing!')
+    cite = "<pre><code>@InProceedings{" + f"{entry_key}, \n"
+    cite += "\tauthor = {" + f"{generate_person_html(entry.persons['author'], make_bold=False, add_links=False, connection=' and ')}" + "}, \n"
+    for entr in ['title', 'booktitle', 'year']:
+        cite += f"\t{entr} = " + "{" + f"{entry.fields[entr]}" + "}, \n"
+    cite += """}</pre></code>"""
+    s += " /" + f"""<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{entry_key}" aria-expanded="false" aria-controls="collapseExample" style="margin-left: -6px; margin-top: -2px;">Expand bibtex</button><div class="collapse" id="collapse{entry_key}"><div class="card card-body">{cite}</div></div>"""
     s += """ </div> </div> </div>"""
     return s
 
@@ -143,18 +158,18 @@ def get_publications_html():
         s+= get_paper_entry(k, bib_data.entries[k])
     return s
 
-def get_talks_html():
+def get_projects_html():
     parser = bibtex.Parser()
-    bib_data = parser.parse_file('talk_list.bib')
+    bib_data = parser.parse_file('project_list.bib')
     keys = bib_data.entries.keys()
     s = ""
     for k in keys:
-        s+= get_talk_entry(k, bib_data.entries[k])
+        s+= get_project_entry(k, bib_data.entries[k])
     return s
 
 def get_index_html():
     pub = get_publications_html()
-    talks = get_talks_html()
+    projects = get_projects_html()
     name, bio_text, footer = get_personal_data()
     s = f"""
     <!doctype html>
@@ -199,8 +214,8 @@ def get_index_html():
                 </div>
                 <div class="row" style="margin-top: 3em;">
                     <div class="col-sm-12" style="">
-                        <!-- <h4>Projects</h4> -->
-                        {talks}
+                        <h4>Unpublished Projects</h4>
+                        {projects}
                     </div>
                 </div>
                 <div class="row" style="margin-top: 3em; margin-bottom: 1em;">
