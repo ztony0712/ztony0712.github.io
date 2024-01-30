@@ -108,7 +108,7 @@ def get_paper_entry(entry_key, entry):
         else:
             print(f'[{entry_key}] Warning: Field {k} missing!')
 
-    cite = "<pre><code>@InProceedings{" + f"{entry_key}, \n"
+    cite = "<pre><code>" + f"{entry.type}" + "{" + f"{entry_key}, \n"
     cite += "\tauthor = {" + f"{generate_person_html(entry.persons['author'], make_bold=False, add_links=False, connection=' and ')}" + "}, \n"
     for entr in ['title', 'booktitle', 'year']:
         cite += f"\t{entr} = " + "{" + f"{entry.fields[entr]}" + "}, \n"
@@ -140,7 +140,7 @@ def get_project_entry(entry_key, entry):
             i += 1
         else:
             print(f'[{entry_key}] Warning: Field {k} missing!')
-    cite = "<pre><code>@InProceedings{" + f"{entry_key}, \n"
+    cite = "<pre><code>" + f"{entry.type}" + "{" + f"{entry_key}, \n"
     cite += "\tauthor = {" + f"{generate_person_html(entry.persons['author'], make_bold=False, add_links=False, connection=' and ')}" + "}, \n"
     for entr in ['title', 'booktitle', 'year']:
         cite += f"\t{entr} = " + "{" + f"{entry.fields[entr]}" + "}, \n"
