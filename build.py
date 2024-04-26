@@ -9,13 +9,13 @@ def get_personal_data():
     bio_text = f"""
                 <p>
                     I am studying MSc in Robotics program in <a href="https://nus.edu.sg/" target="_blank">National University of Singapore (NUS)</a>, 
-                    where I am a member of NUS Autonomous Bus Group supervised by <a href="https://guppy.mpe.nus.edu.sg/~mpeangh/" target="_blank">Prof. Marcelo H. Ang Jr.</a> in 
+                    where I am a member of NUS Autonomous School Bus Group supervised by <a href="https://guppy.mpe.nus.edu.sg/~mpeangh/" target="_blank">Prof. Marcelo H. Ang Jr.</a> in 
                     <a href="https://arc.nus.edu.sg/" target="_blank">Advanced Robotics Centre</a>.
                     <span style="color: red;">Looking for fully funded PhD positions!</span>
                 </p>
                 <p>
                     <span style="font-weight: bold;">Interests:</span>
-                    Robot; EEG; Deep Learning; Autonomous Vehicles; Drone
+                    Robotics; Autonomous Vehicles; Deep Learning; EEG; Drone
                 </p>
                 <p>
                     <span style="font-weight: bold;">Bio:</span> 
@@ -26,7 +26,7 @@ def get_personal_data():
                 </p>
                 <p>Please do not hesitate to contact me for any inquiries!</p>
                 <p>
-                    <a href="assets/pdf/CV_Yimin_ZHAO.pdf" target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
+                    <a href=https://ztony0712.github.io/auto_cv/cv.pdf" target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
                     <a href="mailto:ztony0712@outlook.com" target="_blank" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
                     <a href="https://twitter.com/ztony0712" target="_blank" style="margin-right: 15px"><i class="fab fa-twitter fa-lg"></i> X</a>
                     <a href="https://scholar.google.com/citations?user=NNnZnvAAAAAJ&hl=en" target="_blank" style="margin-right: 15px"><i class="fa-solid fa-book"></i> Scholar</a>
@@ -130,7 +130,8 @@ def get_project_entry(entry_key, entry):
     s += f"""{generate_person_html(entry.persons['author'])} <br>"""
     s += f"""<span style="font-style: italic;">{entry.fields['booktitle']}</span>, {entry.fields['year']} <br>"""
 
-    artefacts = {'html': 'Project Page', 'pdf': 'Paper'}
+    # 'html': 'Project Page', 'pdf': 'Paper', 'supp': 'Supplemental', 'video': 'Video', 'poster': 'Poster', 'code': 'Code'
+    artefacts = {'html': 'Project Page', 'pdf': 'Paper', 'video':'Video'}
     i = 0
     for (k, v) in artefacts.items():
         if k in entry.fields.keys():
@@ -214,7 +215,7 @@ def get_index_html():
                 </div>
                 <div class="row" style="margin-top: 3em;">
                     <div class="col-sm-12" style="">
-                        <h4>Unpublished Projects</h4>
+                        <h4>University Projects</h4>
                         {projects}
                     </div>
                 </div>
