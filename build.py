@@ -26,7 +26,7 @@ def get_personal_data():
                 </p>
                 <p>Please do not hesitate to contact me for any inquiries!</p>
                 <p>
-                    <a href=https://ztony0712.github.io/auto_cv/cv.pdf" target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
+                    <a href=https://ztony0712.github.io/auto_cv/cv.pdf target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
                     <a href="mailto:ztony0712@outlook.com" target="_blank" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
                     <a href="https://twitter.com/ztony0712" target="_blank" style="margin-right: 15px"><i class="fab fa-twitter fa-lg"></i> X</a>
                     <a href="https://scholar.google.com/citations?user=NNnZnvAAAAAJ&hl=en" target="_blank" style="margin-right: 15px"><i class="fa-solid fa-book"></i> Scholar</a>
