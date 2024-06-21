@@ -63,7 +63,8 @@ def get_personal_data():
 def get_author_dict():
     return {
         'Haohong Wang': 'https://www.researchgate.net/profile/Haohong-Wang',
-        'Rompapas Damien': 'https://scholar.google.co.jp/citations?user=BD7CuEcAAAAJ&hl=en',
+        'Damien Rompapas': 'https://scholar.google.co.jp/citations?user=BD7CuEcAAAAJ&hl=en',
+        'Jin Gu': 'https://faculty.swjtu.edu.cn/gujin/zh_CN/index.htm',
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Yimin Zhao', add_links=True):
@@ -71,7 +72,7 @@ def generate_person_html(persons, connection=", ", make_bold=True, make_bold_nam
     s = ""
     for p in persons:
         string_part_i = ""
-        for name_part_i in p.get_part('last') + p.get_part('first'): 
+        for name_part_i in p.get_part('first') + p.get_part('last'): 
             if string_part_i != "":
                 string_part_i += " "
             string_part_i += name_part_i
