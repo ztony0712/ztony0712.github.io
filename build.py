@@ -11,6 +11,7 @@ def get_personal_data():
                     I am studying MSc in Robotics program in <a href="https://nus.edu.sg/" target="_blank">National University of Singapore (NUS)</a>, 
                     where I am a member of NUS Autonomous School Bus Group supervised by <a href="https://guppy.mpe.nus.edu.sg/~mpeangh/" target="_blank">Prof. Marcelo H. Ang Jr.</a> in 
                     <a href="https://arc.nus.edu.sg/" target="_blank">Advanced Robotics Centre</a>.
+                    I am interested in applying AI in various interdisciplinary fields, especially in biomedical information analysis and autonomous vehicles.
                     <span style="color: red;">Looking for fully funded PhD positions!</span>
                 </p>
                 <p>
@@ -19,31 +20,24 @@ def get_personal_data():
                 </p>
                 <p>
                     <span style="font-weight: bold;">Bio:</span> 
-                    I graduated as a BSc from <a href="https://en.swjtu.edu.cn/" target="_blank">Southwest Jiaotong University (SWJTU)</a> in China.
-                    During that time, I focused on the researches of Deep Learning for EEG analysis, surpervised by <a href="https://scholar.google.com/citations?user=eLsZxC4AAAAJ&hl=zh-CN" target="_blank">Prof. Tianrui Li</a> 
-                    and <a href="https://faculty.swjtu.edu.cn/gujin/zh_CN/index.htm" target="_blank">Lecturer Jin Gu</a>.
-                    Also, I am exciting for winning the National Second Prize of <a href="https://chinaus-maker.cscse.edu.cn/chinaus-maker/hjzp/503460/index.html" target="_blank">China-US Young Maker Competition (CUYMC) in 2021</a>.
+                    I graduated as a BSc of Computer Science from <a href="https://en.swjtu.edu.cn/" target="_blank">University of Leeds (UoL)</a>.
+                    During that time, I focused on the researches of applying machine learning methods on EEG analysis.
+                    I am exciting that our brain-controlled robot wins the National Second Prize of <a href="https://chinaus-maker.cscse.edu.cn/chinaus-maker/hjzp/503460/index.html" target="_blank">China-US Young Maker Competition (CUYMC) in 2021</a>.
+                    Also, during my master's period, I published my EEG-based emotion classification system on <a href="https://arxiv.org/abs/2406.14014" target="_blank">MICCAI conference in 2024</a>.
                 </p>
                 <p>Please do not hesitate to contact me for any inquiries!</p>
                 <p>
                     <a href=https://ztony0712.github.io/auto_cv/cv.pdf target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
                     <a href="mailto:ztony0712@outlook.com" target="_blank" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
-                    <a href="https://twitter.com/ztony0712" target="_blank" style="margin-right: 15px"><i class="fab fa-twitter fa-lg"></i> X</a>
                     <a href="https://scholar.google.com/citations?user=NNnZnvAAAAAJ&hl=en" target="_blank" style="margin-right: 15px"><i class="fa-solid fa-book"></i> Scholar</a>
-                    <a href="https://github.com/ztony0712" target="_blank" style="margin-right: 15px"><i class="fab fa-github fa-lg"></i> Github</a>
-                    <a href="https://www.linkedin.com/in/yimin-zhao-570993289/" target="_blank" style="margin-right: 15px"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
-                    <a href="https://space.bilibili.com/11305755?spm_id_from=333.1007.0.0" target="_blank" style="margin-right: 15px"><i class="fa-brands fa-bilibili fa-lg"></i> Bilibili</a>
+                    <a href="https://github.com/ztony0712" target="_blank" style="margin-right: 15px"><i class="fa-brands fa-github fa-lg"></i> Github</a>
+                    <a href="https://www.linkedin.com/in/yimin-zhao-570993289/" target="_blank" style="margin-right: 15px"><i class="fa-brands fa-linkedin fa-lg"></i> LinkedIn</a>
+                    <a href="https://www.youtube.com/@ztony0712" target="_blank" style="margin-right: 15px"><i class="fa-brands fa-youtube fa-lg"></i> YouTube</a>
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#demo" data-toggle="collapse" style="margin-left: -6px; margin-top: -2px;"><i class="fa-solid fa-trophy"></i>Awards</button>
                     <div id="demo" class="collapse">
                     <span style="font-weight: bold;">Awards</span><br>
                     National Second Prize, China-US Young Maker Competition (CUYMC) <br>
-                    National Third Prize, 17th “Challenge Up” <br>
-                    Provincial First Prize, 16th “Challenge Up” <br>
                     Successful Participant, 2021 Mathematical Contest in Modeling <br>
-                    First Prize, SWJTU, 13th Extracurricular Scientific and Technological Innovation Experimental Competition <br>
-                    Third Prize, SWJTU, 12th Extracurricular Scientific and Technological Innovation Experimental Competition <br>
-                    Comprehensive Second-Prize Scholarship, SWJTU, 2020-2021 <br>
-                    Excellent Student Cadre, SWJTU, 2020-2021 <br>
                 </div>
                 </p>
     """
@@ -132,7 +126,7 @@ def get_project_entry(entry_key, entry):
     s += f"""<span style="font-style: italic;">{entry.fields['booktitle']}</span>, {entry.fields['year']} <br>"""
 
     # 'html': 'Project Page', 'pdf': 'Paper', 'supp': 'Supplemental', 'video': 'Video', 'poster': 'Poster', 'code': 'Code'
-    artefacts = {'html': 'Project Page', 'pdf': 'Paper', 'video':'Video'}
+    artefacts = {'html': 'Project Page', 'pdf': 'Paper', 'video':'Video', 'code': 'Code'}
     i = 0
     for (k, v) in artefacts.items():
         if k in entry.fields.keys():
@@ -185,8 +179,7 @@ def get_index_html():
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>{name[0] + ' ' + name[1]}</title>
   <link rel="icon" type="image/x-icon" href="assets/robot.png">
 </head>
