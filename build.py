@@ -25,7 +25,7 @@ def get_personal_data():
                     I am exciting that our brain-controlled robot wins the National Second Prize of <a href="https://chinaus-maker.cscse.edu.cn/chinaus-maker/hjzp/503460/index.html" target="_blank">China-US Young Maker Competition (CUYMC) in 2021</a>.
                     Also, during my master's period, I published my EEG-based emotion classification system on <a href="https://arxiv.org/abs/2406.14014" target="_blank">MICCAI conference in 2024</a>.
                 </p>
-                <p>Please do not hesitate to contact me for any inquiries!</p>
+                <p>Please do not hesitate to contact me for any inquiries! 在此查看<a href="https://ztony0712.atomgit.net/personal.website/">中文版</a>。</p>
                 <p>
                     <a href=https://ztony0712.github.io/auto_cv/cv.pdf target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
                     <a href="mailto:ztony0712@outlook.com" target="_blank" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
