@@ -35,7 +35,7 @@ def get_personal_data():
                     <a href="https://www.youtube.com/@ztony0712" target="_blank" style="margin-right: 15px"><i class="fa-brands fa-youtube fa-lg"></i> YouTube</a>
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#demo" data-toggle="collapse" style="margin-left: -6px; margin-top: -2px;"><i class="fa-solid fa-trophy"></i>Awards</button>
                     <div id="demo" class="collapse">
-                    <span style="font-weight: bold;">Award</span><br>
+                    <span style="font-weight: bold;">Awards</span><br>
                     National Second Prize, China-US Young Maker Competition (CUYMC) <br>
                     Successful Participant, 2021 Mathematical Contest in Modeling <br>
                 </div>
