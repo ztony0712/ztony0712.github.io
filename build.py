@@ -20,7 +20,7 @@ def get_personal_data():
                 </p>
                 <p>
                     <span style="font-weight: bold;">Bio:</span> 
-                    I graduated as a BSc of Computer Science from <a href="https://en.swjtu.edu.cn/" target="_blank">University of Leeds (UoL)</a>.
+                    I graduated as a BSc of Computer Science from <a href="https://www.leeds.ac.uk/" target="_blank">University of Leeds (UoL)</a>.
                     During that time, I focused on the researches of applying machine learning methods on EEG analysis.
                     I am exciting that our brain-controlled robot wins the National Second Prize of <a href="https://chinaus-maker.cscse.edu.cn/chinaus-maker/hjzp/503460/index.html" target="_blank">China-US Young Maker Competition (CUYMC) in 2021</a>.
                     Also, during my master's period, I published my EEG-based emotion classification system on <a href="https://arxiv.org/abs/2406.14014" target="_blank">MICCAI conference in 2024</a>.
