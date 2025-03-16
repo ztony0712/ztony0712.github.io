@@ -8,22 +8,21 @@ def get_personal_data():
     linkedin = "yimin-zhao-570993289"
     bio_text = f"""
                 <p>
-                    I am studying MSc in Robotics program in <a href="https://nus.edu.sg/" target="_blank">National University of Singapore (NUS)</a>, 
-                    where I am a member of NUS Autonomous School Bus Group supervised by <a href="https://guppy.mpe.nus.edu.sg/~mpeangh/" target="_blank">Prof. Marcelo H. Ang Jr.</a> in 
-                    <a href="https://arc.nus.edu.sg/" target="_blank">Advanced Robotics Centre</a>.
-                    I am interested in applying AI in various interdisciplinary fields, especially in biomedical information analysis and autonomous vehicles.
-                    <span style="color: red;">Looking for fully funded PhD positions!</span>
+                    I am a PhD student doing robotics research at  <a href="https://nus.edu.sg/" target="_blank">National University of Singapore (NUS)</a>, 
+                    supervised by <a href="https://cde.nus.edu.sg/cee/staff/yeoh-ker-wei-justin/" target="_blank">Dr. Yeoh Ker-Wei, Justin</a>.
+                    I am interested in applying machine learning methods in robotics, especially in autonomous vehicles.
                 </p>
                 <p>
                     <span style="font-weight: bold;">Interests:</span>
-                    Robotics; Autonomous Vehicles; Deep Learning; EEG; Drone
+                    Machine Learning in Robotics; Neural Network; Autonomous Vehicles; 
                 </p>
                 <p>
                     <span style="font-weight: bold;">Bio:</span> 
                     I graduated as a BSc of Computer Science from <a href="https://www.leeds.ac.uk/" target="_blank">University of Leeds (UoL)</a>.
-                    During that time, I focused on the researches of applying machine learning methods on EEG analysis.
-                    I am exciting that our brain-controlled robot wins the National Second Prize of <a href="https://chinaus-maker.cscse.edu.cn/chinaus-maker/hjzp/503460/index.html" target="_blank">China-US Young Maker Competition (CUYMC) in 2021</a>.
-                    Also, during my master's period, I published my EEG-based emotion classification system on <a href="https://arxiv.org/abs/2406.14014" target="_blank">MICCAI conference in 2024</a>.
+                    During that time, I focused on the researches of applying machine learning methods on EEG analysis to control robot and solve mental health issues.
+                    After that, I took a MSc of Robotics in <a href="https://nus.edu.sg/" target="_blank">NUS</a>, and researched on autonomous driving 
+                    supervised by <a href="https://guppy.mpe.nus.edu.sg/~mpeangh/" target="_blank">Prof. Marcelo H. Ang Jr.</a> in 
+                    <a href="https://arc.nus.edu.sg/" target="_blank">Advanced Robotics Centre</a>.
                 </p>
                 <p>Please do not hesitate to contact me for any inquiries! 在此查看<a href="https://ztony0712.atomgit.net/personal.website/">中文版</a>。</p>
                 <p>
@@ -36,7 +35,7 @@ def get_personal_data():
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#demo" data-toggle="collapse" style="margin-left: -6px; margin-top: -2px;"><i class="fa-solid fa-trophy"></i>Awards</button>
                     <div id="demo" class="collapse">
                     <span style="font-weight: bold;">Awards</span><br>
-                    National Second Prize, China-US Young Maker Competition (CUYMC) <br>
+                    National Second Prize, 2021 China-US Young Maker Competition (CUYMC) <br>
                     Successful Participant, 2021 Mathematical Contest in Modeling <br>
                 </div>
                 </p>
