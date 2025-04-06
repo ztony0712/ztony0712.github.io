@@ -91,7 +91,7 @@ def get_paper_entry(entry_key, entry):
     s += f"""{generate_person_html(entry.persons['author'])} <br>"""
     s += f"""<span style="font-style: italic;">{entry.fields['booktitle']}</span>, {entry.fields['year']} <br>"""
 
-    artefacts = {'html': 'Project Page', 'pdf': 'Paper', 'supp': 'Supplemental', 'video': 'Video', 'poster': 'Poster', 'code': 'Code'}
+    artefacts = {'html': 'Project Page', 'pdf': 'Paper', 'video': 'Video', 'poster': 'Poster', 'code': 'Code', 'slides': 'Slides'}
     i = 0
     for (k, v) in artefacts.items():
         if k in entry.fields.keys():
@@ -125,7 +125,7 @@ def get_project_entry(entry_key, entry):
     s += f"""<span style="font-style: italic;">{entry.fields['booktitle']}</span>, {entry.fields['year']} <br>"""
 
     # 'html': 'Project Page', 'pdf': 'Paper', 'supp': 'Supplemental', 'video': 'Video', 'poster': 'Poster', 'code': 'Code'
-    artefacts = {'html': 'Project Page', 'pdf': 'Paper', 'video':'Video', 'code': 'Code'}
+    artefacts = {'html': 'Project Page', 'pdf': 'Paper', 'video':'Video', 'code': 'Code', 'slides': 'Slides'}
     i = 0
     for (k, v) in artefacts.items():
         if k in entry.fields.keys():
