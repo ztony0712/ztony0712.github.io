@@ -8,23 +8,23 @@ def get_personal_data():
     linkedin = "yimin-zhao-570993289"
     bio_text = f"""
                 <p>
-                    I am a PhD student doing robotics research at  <a href="https://nus.edu.sg/" target="_blank">National University of Singapore (NUS)</a>, 
+                    I am a PhD student doing robotics research @  <a href="https://nus.edu.sg/" target="_blank">National University of Singapore (NUS)</a>, 
                     supervised by <a href="https://cde.nus.edu.sg/cee/staff/yeoh-ker-wei-justin/" target="_blank">Dr. Yeoh Ker-Wei, Justin</a>.
-                    I am interested in applying machine learning methods in robotics, especially in autonomous vehicles.
+                    I am interested in applying machine learning in autonomous systems.
                 </p>
                 <p>
                     <span style="font-weight: bold;">Interests:</span>
-                    Machine Learning in Robotics; Neural Network; Autonomous Vehicles; 
+                    Machine Learning in Robotics; Neural Network; Autonomous Systems; 
                 </p>
                 <p>
                     <span style="font-weight: bold;">Bio:</span> 
                     I graduated as a BSc of Computer Science from <a href="https://www.leeds.ac.uk/" target="_blank">University of Leeds (UoL)</a>.
                     During that time, I focused on the researches of applying machine learning methods on EEG analysis to control robot and solve mental health issues.
                     After that, I took a MSc of Robotics in <a href="https://nus.edu.sg/" target="_blank">NUS</a>, and researched on autonomous driving 
-                    supervised by <a href="https://guppy.mpe.nus.edu.sg/~mpeangh/" target="_blank">Prof. Marcelo H. Ang Jr.</a> in 
+                    supervised by <a href="https://guppy.mpe.nus.edu.sg/~mpeangh/" target="_blank">Prof. Marcelo H. Ang Jr.</a> @ 
                     <a href="https://arc.nus.edu.sg/" target="_blank">Advanced Robotics Centre</a>.
                 </p>
-                <p>Please do not hesitate to contact me for any inquiries! 在此查看<a href="https://ztony0712.atomgit.net/personal.website/">中文版</a>。</p>
+                # <p>Please do not hesitate to contact me for any inquiries! 在此查看<a href="https://ztony0712.atomgit.net/personal.website/">中文版</a>。</p>
                 <p>
                     <a href=https://ztony0712.github.io/auto_cv/cv.pdf target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
                     <a href="mailto:ztony0712@outlook.com" target="_blank" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
