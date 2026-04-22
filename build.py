@@ -8,13 +8,14 @@ def get_personal_data():
     linkedin = "yimin-zhao-570993289"
     bio_text = f"""
                 <p>
-                    I am a PhD student doing robotics research @  <a href="https://nus.edu.sg/" target="_blank">National University of Singapore (NUS)</a>, 
-                    supervised by <a href="https://cde.nus.edu.sg/cee/staff/yeoh-ker-wei-justin/" target="_blank">Dr. Yeoh Ker-Wei, Justin</a>.
+                    I am a PhD student doing robotics research @ <a href="https://nus.edu.sg/" target="_blank">National University of Singapore (NUS)</a>. 
+                    I am a part of the <a href="https://nusbeadz.github.io/" target="_blank">Beadz (Built Environment, Automation, and Digitalization) Lab</a>,
+                    supervised by <a href="https://cde.nus.edu.sg/cee/staff/yeoh-ker-wei-justin/" target="_blank">Prof. Yeoh Ker-Wei, Justin</a>.
                     I am interested in applying machine learning in autonomous systems.
                 </p>
                 <p>
                     <span style="font-weight: bold;">Interests:</span>
-                    Machine Learning in Robotics; Neural Network; Autonomous Systems; 
+                    Machine Learning in Robotics; Autonomous Systems; World Models;
                 </p>
                 <p>
                     <span style="font-weight: bold;">Bio:</span> 
@@ -23,8 +24,9 @@ def get_personal_data():
                     After that, I took a MSc of Robotics in <a href="https://nus.edu.sg/" target="_blank">NUS</a>, and researched on autonomous driving 
                     supervised by <a href="https://guppy.mpe.nus.edu.sg/~mpeangh/" target="_blank">Prof. Marcelo H. Ang Jr.</a> @ 
                     <a href="https://arc.nus.edu.sg/" target="_blank">Advanced Robotics Centre</a>.
+                    I am excited to study at SMART as a visiting student
                 </p>
-                # <p>Please do not hesitate to contact me for any inquiries! 在此查看<a href="https://ztony0712.atomgit.net/personal.website/">中文版</a>。</p>
+                <p>Please do not hesitate to contact me for any inquiries!</p>
                 <p>
                     <a href=https://ztony0712.github.io/auto_cv/cv.pdf target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
                     <a href="mailto:ztony0712@outlook.com" target="_blank" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
